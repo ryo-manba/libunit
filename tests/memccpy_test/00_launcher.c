@@ -1,23 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   03_intmin_test.c                                   :+:      :+:    :+:   */
+/*   00_launcher.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rmatsuka <rmatsuka@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/10 19:52:34 by rmatsuka          #+#    #+#             */
-/*   Updated: 2021/05/10 20:44:56 by rmatsuka         ###   ########.fr       */
+/*   Created: 2021/05/10 19:33:28 by rmatsuka          #+#    #+#             */
+/*   Updated: 2021/05/10 21:14:51 by rmatsuka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "./../tester.h"
 
-int	itoa_intmin_test(void)
+int	memccpy_launcher(void)
 {
-	char	*s = ft_itoa(-2147483648);
+	t_unit_test	*testlist;
 
-	if (!strcmp(s, "-2147483648"))
-		return (0);
-	else
-		return (-1);
+	testlist = NULL;
+	print_title("memccpy test");
+	load_test(&testlist, "Basic Test          ", &memccpy_basic_test);
+	load_test(&testlist, "Basic2 Test         ", &memccpy_basic2_test);
+	load_test(&testlist, "Basic3 Test         ", &memccpy_basic3_test);
+	load_test(&testlist, "Null Test           ", &memccpy_null_test);
+	return(launch_tests(&testlist));
 }
