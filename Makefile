@@ -6,7 +6,7 @@
 #    By: rmatsuka <rmatsuka@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/09 14:16:52 by tjinichi          #+#    #+#              #
-#    Updated: 2021/05/10 11:40:50 by rmatsuka         ###   ########.fr        #
+#    Updated: 2021/05/10 20:07:07 by rmatsuka         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -64,7 +64,11 @@ TEST_SRCS =	tests/main.c \
 		tests/isprint_test/01_basic_test.c \
 		tests/isprint_test/02_basic2_test.c \
 		tests/isprint_test/03_all_test.c \
-
+		tests/itoa_test/00_launcher.c \
+		tests/itoa_test/01_basic_test.c \
+		tests/itoa_test/02_intmax_test.c \
+		tests/itoa_test/03_intmin_test.c \
+		tests/itoa_test/04_zero_test.c
 
 TEST_OBJS = ${TEST_SRCS:.c=.o}
 

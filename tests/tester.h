@@ -103,7 +103,11 @@ int		isprint_all_test(void);
 /*
 ** ITOA TEST
 */
-
+int		itoa_launcher(void);
+int		itoa_basic_test(void);
+int		itoa_intmax_test(void);
+int		itoa_intmin_test(void);
+int		itoa_zero_test(void);
 /*
 ** MEMCCPY TEST
 */
