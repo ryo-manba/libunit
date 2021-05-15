@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   00_launcher.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rmatsuka <rmatsuka@student.42tokyo.jp>     +#+  +:+       +#+        */
+/*   By: tjinichi <tjinichi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/10 10:50:31 by rmatsuka          #+#    #+#             */
-/*   Updated: 2021/05/10 11:51:35 by rmatsuka         ###   ########.fr       */
+/*   Updated: 2021/05/15 03:38:54 by tjinichi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@ int	isascii_launcher(void)
 
 	testlist = NULL;
 	print_title("isascii test");
-	load_test(&testlist, "Basic Test          ", &isascii_basic_test);
+	load_test(&testlist, "Basic1 Test         ", &isascii_basic1_test);
 	load_test(&testlist, "Basic2 Test         ", &isascii_basic2_test);
 	load_test(&testlist, "All Test            ", &isascii_all_test);
-	return(launch_tests(&testlist));
+	return (launch_tests(&testlist));
 }
